@@ -3,4 +3,10 @@
   border: 1px solid #4491db;
   border-radius: 4px;
   background: #fff;
+  margin: 20px;
+}
+
+.country {
+  border: 2px solid transparent;
+  margin: 10px;
 }
