@@ -12,9 +12,9 @@
 
   <body>
     <div class="site-wrapper">
-      <div class="site-header">
-        <div class="site-header__title">C.Y.F</div>
-        <div class="main-nav">
+      <header class="site-header">
+        <div class="site-header__title">codi</div>
+        <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__list-item">
               <a href="index.html">Latest</a>
@@ -26,7 +26,7 @@
               <a href="contact.html">Contact</a>
             </li>
           </ul>
-        </div>
+        </nav>
         <form class="site-search" action="/search">
           <label for="search-input">
             Search
@@ -48,7 +48,7 @@
           </svg>
           <button type="submit">Submit</button>
         </form>
-      </div>
+      </header>
 
       <main>
         <h1>Contact Us</h1>
@@ -56,14 +56,33 @@
         <form method="GET" class="contact-form">
           <div class="contact-form__field">
             <label for="name">Name</label>
-            <input type="text" name="name" id="name" />
+            <input type="text" name="name" id="name" required />
           </div>
           <div class="contact-form__field">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" required />
+          </div>
+
+          <div class="contact-form__field">
+            <label for="message">Message</label>
             <textarea
               name="message"
+              id="message"
+              required
               placeholder="Your message should not be longer than 200 words."
             ></textarea>
           </div>
+          <fieldset style="margin-top: 22px;">
+            <legend>What branch are you interested in?</legend>
+            <div class="radio">
+              <input type="radio" id="london" value="london" name="ll" />
+              <label for="london">London</label><br /><br />
+              <input type="radio" id="Glasgow" value="glasgow" name="ll" />
+              <label for="Glasgow">Glasgow</label><br /><br />
+              <input type="radio" id="Manchester" value="Manchester" name="ll" />
+              <label for="Manchester">Manchester</label>
+            </div>
+          </fieldset>
           <button type="submit">Send</button>
         </form>
       </main>

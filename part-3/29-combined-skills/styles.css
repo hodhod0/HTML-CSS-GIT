@@ -2,3 +2,44 @@
 .heart {
   color: #c85308;
 }
+
+@media only screen and (min-width: 992px) {
+  .hero__title {
+    font-size: xx-large;
+  }
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media only screen and (min-width: 767px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .views {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .views__all {
+    margin-left: auto;
+  }
+}
+.view-list__item {
+  margin-right: 8px;
+  margin-left: 9px;
+}
+
+article {
+  display: flex;
+  max-width: 50em;
+  line-height: 18px;
+  flex-direction: column;
+}
